@@ -1,13 +1,12 @@
 require 'sinatra'
 require 'pry'
 
-
 get '/' do
 
-  erb :create_link
+  erb :single_page
 end
 
-get '/newlink' do
+post '/' do
 
-  erb :new_link
+  redirect to('/')
 end
